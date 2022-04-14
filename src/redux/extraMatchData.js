@@ -52,7 +52,7 @@ export function secondsToHms(d) {
     if (m < 10) {
       mDisplay = `0${m}:`;
     } else {
-      mDisplay = `${m}`;
+      mDisplay = `${m}:`;
     }
   } else {
     mDisplay = '';
@@ -78,7 +78,7 @@ export function date(n) {
     ${date.getMonth() + 1 < 10 ? `0${date.getMonth() + 1}` : (date.getMonth() + 1)}/
     ${date.getFullYear()}, 
     ${date.getHours() < 12 ? (ampm = 'AM', date.getHours() < 10 ? `0${date.getHours()}` : date.getHours())
-    : (ampm = 'PM', date.getHours() - 12 < 10 ? `0${date.getHours()}` : date.getHours())}:
+    : (ampm = 'PM', date.getHours() - 12 < 10 ? `0${date.getHours() - 12}` : date.getHours() - 12)}:
     ${date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes()} ${ampm}`;
 
   return format;

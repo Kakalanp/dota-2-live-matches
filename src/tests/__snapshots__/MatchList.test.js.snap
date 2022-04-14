@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is equal to the snapshot 1`] = `
+<div>
+  <h1
+    className="title"
+  >
+    Top Dota 2 live Matches
+  </h1>
+  <div
+    className="list"
+  />
+</div>
+`;
