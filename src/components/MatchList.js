@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
-import { fetchMatchList } from '../redux/fetchMatch/fetchMatch';
+import { fetchMatchList } from '../redux/fetchMatchList/fetchMatchList';
 import minimap from '../assets/Minimap.png'
 
 export default function Matchlist() {
@@ -11,7 +11,8 @@ export default function Matchlist() {
         dispatch(fetchMatchList())
     }, [])
 
-    const list = useSelector((state) => state)
+    const list = useSelector((state) => state.list)
+    console.log(list)
 
     return (
         <div>
