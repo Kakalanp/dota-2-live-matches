@@ -1,9 +1,11 @@
-import { useParams } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
-import { fetchMatchInfo } from "../redux/fetchMatchInfo/fetchMatchInfo";
-import { translateGameMode, secondsToHms, date } from "../redux/extraMatchData";
+import { fetchMatchInfo } from '../redux/fetchMatchInfo/fetchMatchInfo';
+import { translateGameMode, secondsToHms, date } from '../redux/extraMatchData';
+
+import styles from '../styles/MatchInfo.module.css';
 
 export default function MatchInfo() {
   const { matchid } = useParams();
@@ -14,31 +16,24 @@ export default function MatchInfo() {
   }, []);
 
   const info = useSelector((state) => state.info[0]);
-  console.log(info);
-
-  let winner = ''
-  if(info !== undefined){
-    info.radiant_win ? winner = 'Radiant' : winner = 'Dire';
-  }
-
 
   return (
     <>
       {info !== undefined ? (
         <div>
+          {info.radiant_win
+            ? <h1 className={styles.title} Victory="Radiant">Radiant Victory</h1>
+            : <h1 className={styles.title} Victory="Dire">Dire Victory</h1>}
           <div>
-            <h1>{winner} Victory</h1>
-          </div>
-          <div>
-            <h1>Match breakdown</h1>
-            <div>
-              <div>
+            <h1 className={styles.subTitle}>Match breakdown :</h1>
+            <div className={styles.breakdown}>
+              <div className={styles.gameMode}>
                 <p>{translateGameMode(info.game_mode)}</p>
               </div>
               <div>
-                <p>{info.radiant_score}</p>
+                <p className={styles.score}>{info.radiant_score}</p>
                 <p>VS</p>
-                <p>{info.dire_score}</p>
+                <p className={styles.score}>{info.dire_score}</p>
               </div>
               <div>
                 <p>Duration:</p>
@@ -52,7 +47,7 @@ export default function MatchInfo() {
                 <p>Match ID:</p>
                 <p>6512361923</p>
               </div>
-              <div>
+              <div className={styles.download}>
                 <a href={info.replay_url}>DOWNLOAD REPLAY</a>
               </div>
             </div>
