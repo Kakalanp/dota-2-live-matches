@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dota-2-live-matches/static/css/main.f7da9de9.css",
-    "main.js": "/dota-2-live-matches/static/js/main.ad54e3c8.js",
+    "main.js": "/dota-2-live-matches/static/js/main.6f3549e8.js",
     "static/media/Minimap.png": "/dota-2-live-matches/static/media/Minimap.1f7c97c593bec8055596.png",
     "index.html": "/dota-2-live-matches/index.html",
     "main.f7da9de9.css.map": "/dota-2-live-matches/static/css/main.f7da9de9.css.map",
-    "main.ad54e3c8.js.map": "/dota-2-live-matches/static/js/main.ad54e3c8.js.map"
+    "main.6f3549e8.js.map": "/dota-2-live-matches/static/js/main.6f3549e8.js.map"
   },
   "entrypoints": [
     "static/css/main.f7da9de9.css",
-    "static/js/main.ad54e3c8.js"
+    "static/js/main.6f3549e8.js"
   ]
 }
