@@ -7,7 +7,7 @@ export default function App() {
     <BrowserRouter>
     <Routes>
     <Route path="/" element={<Matchlist />} />
-    <Route path="/matchinfo" element={<MatchInfo />} />
+    <Route path="/matchinfo/:matchid" element={<MatchInfo />} />
     </Routes>
     </BrowserRouter>
   )

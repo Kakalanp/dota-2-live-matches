@@ -1,4 +1,8 @@
+import { useParams } from 'react-router-dom';
+
 export default function MatchInfo() {
+    const { matchid } = useParams();
+    console.log(matchid);
     return (
         <div>
             <div>
