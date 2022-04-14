@@ -22,8 +22,8 @@ export default function MatchInfo() {
       {info !== undefined ? (
         <div>
           {info.radiant_win
-            ? <h1 className={styles.title} Victory="Radiant">Radiant Victory</h1>
-            : <h1 className={styles.title} Victory="Dire">Dire Victory</h1>}
+            ? <h1 className={styles.title} victory="Radiant">Radiant Victory</h1>
+            : <h1 className={styles.title} victory="Dire">Dire Victory</h1>}
           <div>
             <h1 className={styles.subTitle}>Match breakdown :</h1>
             <div className={styles.breakdown}>
