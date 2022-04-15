@@ -18,9 +18,9 @@
 - Twitter: [@LeccaJoaquin](https://twitter.com/LeccaJoaquin)
 - LinkedIn: [Joaquin Garrido Lecca Zanetti](https://www.linkedin.com/in/joaquin-garrido-lecca-zanetti-623583204)
 
-## Live page:
+## See it in action:
 
-[Here](https://kakalanp.github.io/dota-2-live-matches/)
+[Live page](https://kakalanp.github.io/dota-2-live-matches/) [Live video](https://www.loom.com/share/d09f1475ecb440108b73fa0c7210e26e)
 
 ## Contributing: 🤝
 
