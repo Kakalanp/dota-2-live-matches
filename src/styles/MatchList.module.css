@@ -1,0 +1,32 @@
+.title {
+  padding: 10px;
+  background-color: var(--dark-pink);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list > a {
+  max-width: 30%;
+  min-width: 250px;
+  padding: 20px 4%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.matchId {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 68px);
+}
+
+[color="true"] {
+  background-color: var(--dark-pink);
+}

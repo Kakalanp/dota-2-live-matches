@@ -1,0 +1,62 @@
+.goBack {
+  position: fixed;
+  left: 0;
+  width: 14vw;
+}
+
+.title {
+  padding: 10px;
+  font-size: 10vw;
+}
+
+.subTitle {
+  font-size: 6vw;
+  background-color: var(--dark-pink);
+}
+
+[Victory="Dire"] {
+  text-shadow: 0 0 100px rgb(211 0 0), 0 0 100px rgb(211 0 0), 0 0 100px rgb(211 0 0), 0 0 20px rgb(211 0 0);
+}
+
+[Victory="Radiant"] {
+  text-shadow: 0 0 100px rgb(0, 211, 17, 1), 0 0 100px rgb(0, 211, 17, 1), 0 0 100px rgb(0, 211, 17, 1), 0 0 20px rgb(0, 211, 17, 1);
+}
+
+.breakdown {
+  padding: 60px calc(30% - 100px);
+}
+
+.breakdown > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0;
+}
+
+.gameMode {
+  justify-content: center !important;
+  font-weight: 700;
+}
+
+.score {
+  font-size: 6vw;
+}
+
+.download {
+  justify-content: center !important;
+}
+
+.download a {
+  padding: 30px 100px;
+  border: var(--dark-pink) solid 7px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+}
+
+.download a:hover {
+  padding: 34px 100px;
+  border: white solid 3px;
+  background-color: var(--dark-pink);
+  font-weight: 700;
+  letter-spacing: 6px;
+}

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is equal to the snapshot 1`] = `
+Array [
+  <a
+    className="goBack"
+    href="/dota-2-live-matches/"
+    onClick={[Function]}
+  >
+    <img
+      alt="Go back"
+      src="back.png"
+    />
+  </a>,
+  <p>
+    Retrieving match data...
+  </p>,
+]
+`;
