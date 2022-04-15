@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
@@ -6,6 +6,7 @@ import { fetchMatchInfo } from '../redux/fetchMatchInfo/fetchMatchInfo';
 import { translateGameMode, secondsToHms, date } from '../redux/extraMatchData';
 
 import styles from '../styles/MatchInfo.module.css';
+import back from '../assets/back.png';
 
 export default function MatchInfo() {
   const { matchid } = useParams();
@@ -19,6 +20,7 @@ export default function MatchInfo() {
 
   return (
     <>
+      <Link className={styles.goBack} to="/dota-2-live-matches/"><img src={back} alt="Go back" /></Link>
       {info !== undefined ? (
         <div>
           {info.radiant_win

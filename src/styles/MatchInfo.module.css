@@ -1,3 +1,9 @@
+.goBack {
+  position: fixed;
+  left: 0;
+  width: 14vw;
+}
+
 .title {
   padding: 10px;
   font-size: 10vw;

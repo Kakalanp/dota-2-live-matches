@@ -27,7 +27,7 @@ export default function Matchlist() {
               count += 1;
             }
             return (
-              <Link to={`/matchinfo/${match}`} key={match} color="true">
+              <Link to={`/dota-2-live-matches/matchinfo/${match}`} key={match} color="true">
                 <img src={minimap} alt="dota 2's minimap" />
                 <h5 className={styles.matchId}>
                   Match id :
@@ -39,7 +39,7 @@ export default function Matchlist() {
           }
           count += 1;
           return (
-            <Link to={`/matchinfo/${match}`} key={match} color="false">
+            <Link to={`/dota-2-live-matches/matchinfo/${match}`} key={match} color="false">
               <img src={minimap} alt="dota 2's minimap" />
               <h5 className={styles.matchId}>
                 Match id :
@@ -53,17 +53,3 @@ export default function Matchlist() {
     </div>
   );
 }
-
-// @import url('https://fonts.googleapis.com/css2?family=Lato');
-
-// * {
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-//   }
-
-//   :root {
-//     --pink: #ec4c8a;
-//     --dark-pink: #df4782;
-//     --lato: 'Lato', sans-serif;
-//   }

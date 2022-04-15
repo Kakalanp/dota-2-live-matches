@@ -8,8 +8,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Matchlist />} />
-        <Route path="/matchinfo/:matchid" element={<MatchInfo />} />
+        <Route path="/dota-2-live-matches/" element={<Matchlist />} />
+        <Route path="/dota-2-live-matches/matchinfo/:matchid" element={<MatchInfo />} />
       </Routes>
     </BrowserRouter>
   );
